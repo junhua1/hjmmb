@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>MMB</title>
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/search.css">
+	<link rel="stylesheet" href="css/inlanddiscount.css">
+</head>
+<body>
+<div class="mb_container">
+	<div class="mb_header">
+		<div class="logo">
+			<a href="javascript:history.go(-1)">
+				<img src="images/header_logo.png" alt="">
+			</a>
+		</div>
+
+		<div class="lessm"><a href="#">国内折扣</a></div>
+		<div class="load">
+			<a href="#">
+				<img src="images/header_app.png" alt="">
+			</a>
+		</div>
+	</div>
+
+
+	<div class="mb_content">
+		<div class="mb_product">
+			<ul>
+				<!--挖个坑-->
+			</ul>
+		</div>
+	</div>
+
+
+
+
+
+	<!--底部-->
+		<div class="mb_footer">
+			<div class="foot_top">
+				<a href="#">登录</a>
+				<a href="#">注册</a>
+				<a href="#">返回顶部</a>
+			</div>
+			<div class="footer_bot">
+				<p>
+					<a href="javascript:;" style="color: Red;">手机APP下载</a>
+					<a href="index.html" style="color: black;">慢慢买手机版</a>
+					-- 掌上比价平台
+				</p>
+				<p>m.manmanbuy.com</p>
+			</div>
+		</div>
+</div>
+
+<script type="text/html" id="tpl">
+{{each result v i}}
+
+<li>
+	<a href="discount.html?productid={{v.productId}}">
+		<div class="img">
+			{{#v.productImg}}
+		</div>
+		<div class="title">
+			{{v.productName}}
+		</div>
+		<div class="exra">
+			{{v.productPrice}}
+		</div>
+		<div class="mall">
+			{{v.productFrom}}|{{v.productTime}}
+		</div>
+	</a>
+</li>
+{{/each}}
+</script>
+
+<script src="lib/zepto/zepto.min.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="js/common.js"></script>
+<script src="js/inlanddiscount.js"></script>
+</body>
+</html>

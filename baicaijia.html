@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>白菜价淘宝内部折扣</title>
+
+	<link rel="stylesheet" href="lib/fa/css/font-awesome.min.css">
+	<link rel="stylesheet" href="lib/mui/css/mui.min.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/search.css">
+	<link rel="stylesheet" href="css/baicaijia.css">
+</head>
+<body>
+<div class="mb_container">
+	<div class="mb_header">
+		<div class="logo">
+			<a href="javascript:history.go(-1)">
+				<span class="fa fa-angle-left"></span>
+			</a>
+		</div>
+
+		<div class="lessm"><a href="#">白菜价-淘宝内部券</a></div>
+		<div class="load">
+			<a href="#">
+				<img src="images/header_app.png" alt="">
+			</a>
+		</div>
+	</div>
+
+
+	<div class="mb_content">
+		<div class="nav">
+			<div class="mui-scroll-wrapper">
+				<ul class="mui-scroll clearfix">
+					<!--这里放置真实显示的DOM内容-->
+				</ul>
+			</div>
+			<div class="search_btn fa fa-search"></div>
+		</div>
+	</div>
+	<div class="bcj_list">
+		<ul>
+
+		</ul>
+	</div>
+
+	<a href="#">
+		<div class="circ fa fa-hand-pointer-o"></div>
+	</a>
+
+
+
+
+	<!--底部-->
+	<div class="mb_footer">
+		<div class="foot_top">
+			<a href="#">登录</a>
+			<a href="#">注册</a>
+			<a href="#">返回顶部</a>
+		</div>
+		<div class="footer_bot">
+			<p>
+				<a href="javascript:;" style="color: Red;">手机APP下载</a>
+				<a href="index.html" style="color: black;">慢慢买手机版</a>
+				-- 掌上比价平台
+			</p>
+			<p>m.manmanbuy.com</p>
+		</div>
+	</div>
+</div>
+
+
+<script id="tpl" type="text/html">
+{{each result v i}}
+	<li><a href="baicaijia.html?titleid={{v.titleId}}">{{v.title}}</a></li>
+{{/each}}
+</script>
+
+<script type="text/html" id="tpl2">
+	{{each result v i}}
+	<li>
+		<a href="#">
+			<div class="img">
+				{{#v.productImg}}
+			</div>
+
+			<div class="info">
+				<div class="tp">
+					<div class="t">
+						{{#v.productName}}
+					</div>
+					<div class="pr">
+						{{#v.productPrice}}
+					</div>
+				</div>
+
+				<div class="o clearfix">
+					<div class="bar clearfix">
+						{{#v.productCouponRemain}}
+					</div>
+
+					<div class="botto clearfix">
+						<div class="q">
+							{{#v.productCoupon}}
+						</div>
+						<div class="g">
+							{{#v.productHref}}
+						</div>
+					</div>
+				</div>
+			</div>
+		</a>
+	</li>
+	{{/each}}
+</script>
+
+<script src="lib/zepto/zepto.min.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="lib/mui/js/mui.js"></script>
+<script src="js/common.js"></script>
+<script src="js/baicaijia.js"></script>
+</body>
+</html>

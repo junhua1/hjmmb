@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>MMB</title>
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/brand.css">
+</head>
+<body>
+<div class="mb_container">
+	<div class="mb_header">
+		<div class="logo">
+			<a href="#">
+				<img src="images/header_logo.png" alt="">
+			</a>
+		</div>
+		<div class="load">
+			<a href="#">
+				<img src="images/header_app.png" alt="">
+			</a>
+		</div>
+	</div>
+	<div class="mb_content">
+		<div class="mb_search">
+			<form action="#" class="search">
+				<input type="search" name="" id="" placeholder="请输入你想比价的商品">
+				<input type="button" value="搜索">
+			</form>
+		</div>
+
+
+		<div class="mb_nav">
+			<ul class="clearfix">
+				<li><a href="index.html">首页 ></a></li>
+				<li><a href="category.html">全部分类 ></a></li>
+			</ul>
+		</div>
+
+		<div class="title">
+			平板电视哪个牌子好
+		</div>
+
+
+		<div class="brand">
+			<ul>
+				<!--挖坑-->
+			</ul>
+		</div>
+
+
+		<div class="title1">
+			平板电视产品销量排行
+		</div>
+
+		<div class="pro_list clearfix">
+			<ul>
+
+			</ul>
+		</div>
+
+
+		<div class="title2">
+			平板电视最新评论
+		</div>
+
+		<div class="pjt">
+			<!--wakeng-->
+		</div>
+
+		<div class="pinlunlst clearfix">
+			<ul>
+
+			</ul>
+		</div>
+	</div>
+
+
+
+
+
+	<!--底部-->
+	<div class="mb_footer">
+		<div class="foot_top">
+			<a href="#">登录</a>
+			<a href="#">注册</a>
+			<a href="#">返回顶部</a>
+		</div>
+		<div class="footer_bot">
+			<p>
+				<a href="javascript:;" style="color: Red;">手机APP下载</a>
+				<a href="index.html" style="color: black;">慢慢买手机版</a>
+				-- 掌上比价平台
+			</p>
+			<p>m.manmanbuy.com</p>
+		</div>
+	</div>
+</div>
+
+<script type="text/html" id="tpl">
+{{each result v i}}
+	<li>
+		<a href="productlist.html?categoryid=1&pageid=1">
+			<div class="div1">
+				<span class="span1">{{i+1}}</span>
+			</div>
+			<div class="rit">
+				<p class="p1">{{v.brandName}}</p>
+				<p class="p2">{{v.brandInfo}}</p>
+			</div>
+		</a>
+	</li>
+{{/each}}
+</script>
+
+<script type="text/html" id="tpl2">
+{{each result v i}}
+	<li class="clearfix">
+		<a href="bijia.html?productid={{v.productId}}&categoryId={{v.productId}}">
+			<div class="pic1" data-img="{{v.productImg}}">
+				{{#v.productImg}}
+			</div>
+			<div class="info1" data-id="{{v.productId}}">
+				<div class="tit" data-tit="{{v.productName}}">
+					{{v.productName}}
+				</div>
+				<div class="prc clearfix">
+					<span class="jiag">{{v.productPrice}}</span>
+					<span class="wjx">★★★★★</span>
+				</div>
+				<div class="other1">
+					<span>{{v.productQuote}}</span>
+					<span>{{v.productCom}}</span>
+				</div>
+			</div>
+
+		</a>
+	</li>
+{{/each}}
+</script>
+
+
+
+<script type="text/html" id="tpl3">
+{{each result v i}}
+<li class="clearfix">
+	<div class="tp clearfix">
+		<div class="tit3">
+			<div class="imgs">
+				{{#src}}
+			</div>
+			<div class="tit5">
+				{{tit}}
+			</div>
+		</div>
+	</div>
+	<div class="comment">
+		<div class="midname">
+			<span class="users">{{v.comName}} : </span>
+			<span class="wjx2">★★★★★</span>
+			<i>{{v.comTime}}</i>
+		</div>
+
+		<div class="bottomcomt">
+			{{v.comContent}} 评论发布自 {{v.comFrom}}
+		</div>
+	</div>
+
+</li>
+{{/each}}
+</script>
+
+<script src="lib/zepto/zepto.min.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="js/common.js"></script>
+<script src="js/brand.js"></script>
+</body>
+</html>

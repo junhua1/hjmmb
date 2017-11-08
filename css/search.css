@@ -1,0 +1,33 @@
+.mb_search {
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  position: relative;
+}
+.mb_search input[type=search] {
+  padding-left: 20px;
+  width: 80%;
+  padding-right: 50px;
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  height: 30px;
+  border-radius: 15px;
+  border: none;
+  background-color: #f1f1f1;
+}
+.mb_search input[type=button] {
+  width: 63px;
+  height: 30px;
+  border-radius: 15px;
+  border: none;
+  background-color: #ff841d;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 16px;
+  line-height: 30px;
+}

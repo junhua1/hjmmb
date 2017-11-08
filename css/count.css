@@ -1,0 +1,21 @@
+.mb_count {
+  margin-top: 5px;
+  height: 35px;
+  background-color: #ff9000;
+  position: relative;
+}
+.mb_count p {
+  font-size: 16px;
+  line-height: 35px;
+  margin-left: 10px;
+  color: white;
+}
+.mb_count .img {
+  width: 20px;
+  height: 20px;
+  color: blue;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}

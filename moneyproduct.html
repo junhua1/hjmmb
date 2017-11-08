@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>MMB</title>
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/search.css">
+	<link rel="stylesheet" href="css/moneyproduct.css">
+</head>
+<body>
+<div class="mb_container">
+	<div class="mb_header">
+		<div class="logo">
+			<a href="index.html">
+				<img src="images/header_logo.png" alt="">
+			</a>
+		</div>
+
+		<div class="lessm"><a href="#">国内折扣</a></div>
+		<div class="load">
+			<a href="#">
+				<img src="images/header_app.png" alt="">
+			</a>
+		</div>
+	</div>
+
+
+	<div class="mb_content">
+		<div class="mb_product">
+
+		</div>
+	</div>
+
+
+
+
+
+	<!--底部-->
+	<div class="mb_footer">
+		<div class="foot_top">
+			<a href="#">登录</a>
+			<a href="#">注册</a>
+			<a href="#">返回顶部</a>
+		</div>
+		<div class="footer_bot">
+			<p>
+				<a href="javascript:;" style="color: Red;">手机APP下载</a>
+				<a href="index.html" style="color: black;">慢慢买手机版</a>
+				-- 掌上比价平台
+			</p>
+			<p>m.manmanbuy.com</p>
+		</div>
+	</div>
+</div>
+
+
+	<script type="text/html" id="tpl">
+		{{each result v i}}
+		<h3>{{v.productName}}</h3>
+		<div class="info">
+			<span class="mall">{{v.productFrom}}</span>
+			<span class="addtime" style="margin-right: 4px;">{{v.productTime}}</span>
+			<span class="author">{{v.productTips}}<span class="addtime" style="margin-right: 4px;">{{v.productTime}}</span></span>
+		</div>
+
+		<div class="cont clearfix">
+			<div class="right">
+				{{#v.productImgSm}}
+			</div>
+			<p>{{v.productInfo2}}</p>
+			<p>{{v.productPinkage}}</p>
+			<div class="left">
+				{{#v.productImg2}}
+			</div>
+
+
+		</div>
+		<div class="drop clearfix">
+			{{#v.productCity}}
+		</div>
+		<div class="golink">
+
+			<a href="javascript:;">前往购买</a>
+		</div>
+
+		<div style="text-align: center; margin: 20px 10px;">
+			<img src="images/mmbweixin2.png" style="width: 100%; height: auto;">
+		</div>
+
+		<div class="content_t">
+			<div class="tit">发表评论</div>
+			<div class="reply">
+				<div class="form">
+					<textarea name="ctl00$ContentBody$txt_nr" id="ctl00_ContentBody_txt_nr" rows="3"></textarea>
+					<input name="ctl00$ContentBody$lbl_fbr" id="ctl00_ContentBody_lbl_fbr" value="手机端网友14***154" type="hidden">
+					<input name="ctl00$ContentBody$hid_name" id="ctl00_ContentBody_hid_name" value="移动端：法国进口 波尔多十字布伊堡干白葡萄酒 750ml" type="hidden">
+					<div class="ctrl">
+						<input name="ctl00$ContentBody$Button1" value="发表评论" id="ctl00_ContentBody_Button1" class="tjdp" type="submit">
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="list">
+			{{#v.productComment}}
+		</div>
+		{{/each}}
+
+	</script>
+<script src="lib/zepto/zepto.min.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="js/common.js"></script>
+<script src="js/moneyproduct.js"></script>
+</body>
+</html>

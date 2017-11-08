@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>凑单品</title>
+
+	<link rel="stylesheet" href="lib/fa/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/search.css">
+	<link rel="stylesheet" href="css/gsproduct.css">
+</head>
+<body>
+<div class="mb_container">
+	<div class="mb_header">
+		<div class="logo">
+			<a href="javascript:history.go(-1)">
+				<span class="fa fa-angle-left"></span>
+			</a>
+		</div>
+
+		<div class="lessm"><a href="#">凑单品</a></div>
+		<div class="load">
+			<a href="#">
+				<img src="images/header_app.png" alt="">
+			</a>
+		</div>
+	</div>
+
+
+	<div class="mb_product">
+		<div class="banner clearfix">
+			<ul>
+				<li><a href="#" class="shop">京东</a></li>
+				<li><a href="#" class="area">华北</a></li>
+				<li><a href="#" class="rice">全部价格</a></li>
+			</ul>
+		</div>
+		<div class="text1">
+			<ul>
+				<!--wakeng-->
+			</ul>
+		</div>
+		<div class="text2">
+			<ul>
+
+			</ul>
+		</div>
+		<div class="text3">
+			<ul>
+				<li>全部价格</li>
+			</ul>
+		</div>
+	</div>
+
+<div class="list clearfix">
+
+</div>
+
+
+	<!--底部-->
+	<div class="mb_footer">
+		<div class="foot_top">
+			<a href="#">登录</a>
+			<a href="#">注册</a>
+			<a href="#">返回顶部</a>
+		</div>
+		<div class="footer_bot">
+			<p>
+				<a href="javascript:;" style="color: Red;">手机APP下载</a>
+				<a href="index.html" style="color: black;">慢慢买手机版</a>
+				-- 掌上比价平台
+			</p>
+			<p>m.manmanbuy.com</p>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/html" id="tpl">
+{{each result v i}}
+<li data-id="{{v.shopId}}"><a href="#">{{v.shopName}}</a></li>
+{{/each}}
+</script>
+
+<script type="text/html" id="tpl2">
+	{{each result v i}}
+	<li data-id="{{v.areaId}}"><a href="#">{{v.areaName}}</a></li>
+	{{/each}}
+</script>
+
+
+<script type="text/html" id="tpl3">
+	<ul>
+		{{each result v i}}
+		<li>
+			<a href="#">
+				<div class="img">
+					<img src="{{#v.productImg}}" alt="">
+				</div>
+				<div class="title">
+					{{v.productName}}
+				</div>
+				<div class="other">
+					<div class="price">
+						{{v.productPrice}}
+					</div>
+					<div class="btn">去凑单</div>
+				</div>
+			</a>
+		</li>
+		{{/each}}
+	</ul>
+</script>
+
+<script src="lib/zepto/zepto.min.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="js/common.js"></script>
+<script src="js/gsproduct.js"></script>
+</body>
+</html>

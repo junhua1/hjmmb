@@ -1,0 +1,55 @@
+.mb_header {
+  position: fixed;
+  top: 0;
+  max-width: 750px;
+  width: 100%;
+  background-color: #f4483e;
+}
+.mb_header .logo {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.mb_header .logo span {
+  font-size: 24px;
+  color: #fff;
+}
+.mb_header .lessm {
+  margin: 0 50px;
+  text-align: center;
+}
+.mb_header .lessm a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 50px;
+}
+.mb_header .load {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.mb_content ul {
+  margin-left: 10px;
+}
+.mb_content li {
+  margin-top: 20px;
+  width: 118.333px;
+  border: 1px solid #ccc;
+  float: left;
+  padding: 10px;
+  margin-right: 5px;
+}
+.mb_content li .img {
+  width: 50px;
+  height: 50px;
+  margin-left: 32px;
+}
+.mb_content li .img img {
+  width: 50px;
+  height: 50px;
+}

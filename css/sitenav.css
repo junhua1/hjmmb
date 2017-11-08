@@ -1,0 +1,56 @@
+.mb_container {
+  background-color: #fff;
+}
+.mb_header {
+  position: fixed;
+  top: 0;
+  max-width: 750px;
+  width: 100%;
+  background-color: #ff841d;
+}
+.mb_header .logo {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.mb_header .logo span {
+  font-size: 24px;
+  color: #fff;
+}
+.mb_header .lessm {
+  margin: 0 50px;
+  text-align: center;
+}
+.mb_header .lessm a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 50px;
+}
+.mb_header .load {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.mb_product {
+  width: 300px;
+  margin: 10px auto;
+}
+.mb_product a {
+  color: #000;
+  padding: 10px 8px;
+  background: #f4f4f4;
+  border: 1px solid #bfbfbf;
+  float: left;
+  margin: 0 0 5px 5px;
+}
+.mb_product a img {
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  float: left;
+}

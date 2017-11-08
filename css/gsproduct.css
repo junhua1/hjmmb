@@ -1,0 +1,167 @@
+.mb_header {
+  position: fixed;
+  top: 0;
+  max-width: 750px;
+  width: 100%;
+  background-color: #ff841d;
+}
+.mb_header .logo {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.mb_header .logo span {
+  font-size: 24px;
+  color: #fff;
+}
+.mb_header .lessm {
+  margin: 0 50px;
+  text-align: center;
+}
+.mb_header .lessm a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 50px;
+}
+.mb_header .load {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.mb_product {
+  position: relative;
+}
+.mb_product .banner ul {
+  height: 37px;
+  border: 1px solid #ccc;
+}
+.mb_product .banner li {
+  float: left;
+  width: 33.33%;
+  height: 37px;
+  line-height: 37px;
+  text-align: center;
+}
+.mb_product .banner li a {
+  color: #000;
+}
+.mb_product .text1 {
+  width: 100%;
+  position: absolute;
+  top: 38px;
+  left: 0;
+  display: none;
+}
+.mb_product .text1 li {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #ccc;
+  padding-left: 10px;
+  background-color: #fff;
+}
+.mb_product .text1 li a {
+  color: #000;
+}
+.mb_product .text2 {
+  width: 100%;
+  position: absolute;
+  top: 38px;
+  left: 0;
+  display: none;
+}
+.mb_product .text2 li {
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #ccc;
+  padding-left: 10px;
+  background-color: #fff;
+}
+.mb_product .text2 li a {
+  color: #000;
+}
+.mb_product .text3 {
+  width: 100%;
+  position: absolute;
+  top: 38px;
+  left: 0;
+  display: none;
+}
+.mb_product .text3 li {
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #ccc;
+  padding-left: 10px;
+  background-color: #fff;
+}
+.mb_product .text3 li a {
+  color: #000;
+}
+.list {
+  width: 100%;
+  background-color: #f1f1f1;
+  padding: 6px 0px;
+}
+.list ul {
+  width: 100%;
+  padding: 10px;
+}
+.list ul li {
+  padding-bottom: 5px;
+  width: 49%;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+.list ul li:nth-child(odd) {
+  float: left;
+}
+.list ul li:nth-child(even) {
+  float: right;
+}
+.list ul li .img {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  overflow: hidden;
+}
+.list ul li .img img {
+  width: 174px;
+  height: 174px;
+  display: block;
+  margin: 0 auto;
+}
+.list ul li .title {
+  color: #333333;
+  word-break: break-all;
+  padding: 0 6px;
+  height: 14px;
+  overflow: hidden;
+  font-size: 12px;
+  margin-top: 10px;
+  line-height: 14px;
+  font-weight: normal;
+  text-align: left;
+  margin-top: 6px;
+}
+.list ul li .other {
+  padding: 6px;
+}
+.list ul li .other .price {
+  float: left;
+  color: #f8601d;
+  font-size: 20px;
+}
+.list ul li .other .btn {
+  float: right;
+  font-size: 14px;
+  color: #FFFFFF;
+  border-radius: 3px;
+  background-color: #ff9501;
+  padding: 4px 10px;
+  text-decoration: none;
+  display: inline-block;
+}

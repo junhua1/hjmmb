@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>优惠券</title>
+
+	<link rel="stylesheet" href="lib/fa/css/font-awesome.min.css">
+	<link rel="stylesheet" href="lib/swiper/css/swiper.min.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/search.css">
+	<link rel="stylesheet" href="css/couponproduct.css">
+</head>
+<body>
+<div class="mb_container">
+	<div class="mb_header">
+		<div class="logo">
+			<a href="javascript:history.go(-1)">
+				<span class="fa fa-angle-left"></span>
+			</a>
+		</div>
+
+		<div class="lessm"><a href="#">肯德基优惠券</a></div>
+		<div class="load">
+			<a href="#">
+				<img src="images/header_app.png" alt="">
+			</a>
+		</div>
+	</div>
+
+	<div class="banner">
+		--点餐前出示手机中的优惠券，即可享受优惠--
+	</div>
+
+
+	<div class="mb_content">
+		<!--挖个坑-->
+	</div>
+	
+
+
+
+	<!--底部-->
+	<div class="mb_footer">
+		<div class="foot_top">
+			<a href="#">登录</a>
+			<a href="#">注册</a>
+			<a href="#">返回顶部</a>
+		</div>
+		<div class="footer_bot">
+			<p>
+				<a href="javascript:;" style="color: Red;">手机APP下载</a>
+				<a href="index.html" style="color: black;">慢慢买手机版</a>
+				-- 掌上比价平台
+			</p>
+			<p>m.manmanbuy.com</p>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+<div class="hid">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<!--挖个坑-->
+			</div>
+			<!-- 如果需要分页器 -->
+			<div class="swiper-pagination"></div>
+
+			<!-- 如果需要导航按钮 -->
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+
+			<!-- 如果需要滚动条 -->
+			<div class="swiper-scrollbar"></div>
+	</div>
+</div>
+
+
+<script type="text/html" id="tpl">
+<ul class="clearfix">
+	{{each result v i}}
+	<li data-pic="{{v.couponProductImg}}">
+		<a href="#">
+			<div class="img">
+				{{#v.couponProductImg}}
+			</div>
+			<div class="info">
+				<div class="tit">
+					<h3>{{v.couponProductName}}</h3>
+					<h2>{{v.couponProductPrice}}</h2>
+				</div>
+				<div class="time">
+					{{v.couponProductTime}}
+				</div>
+			</div>
+			<div class="fa fa-angle-right"></div>
+		</a>
+	</li>
+	{{/each}}
+</ul>
+	
+</script>
+
+<script type="text/html" id="tpl2">
+	<div class="swiper-slide">{{#src}}</div>
+	<div class="swiper-slide">{{#src}}</div>
+	<div class="swiper-slide">{{#src}}</div>
+</script>
+
+<script src="lib/zepto/zepto.min.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="lib/swiper/js/swiper.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/couponproduct.js"></script>
+</body>
+</html>

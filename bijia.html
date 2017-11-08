@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>MMB</title>
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/search.css">
+	<link rel="stylesheet" href="css/bijia.css">
+</head>
+<body>
+<div class="mb_container">
+	<div class="mb_header">
+		<div class="logo">
+			<a href="index.html">
+				<img src="images/header_logo.png" alt="">
+			</a>
+		</div>
+		<div class="load">
+			<a href="#">
+				<img src="images/header_app.png" alt="">
+			</a>
+		</div>
+	</div>
+	<div class="mb_content">
+		<div class="mb_search">
+			<form action="#" class="search">
+				<input type="search" name="" id="" placeholder="请输入你想比价的商品">
+				<input type="button" value="搜索">
+			</form>
+		</div>
+
+		<div class="mb_banner">
+			<ul>
+				<li><a href="index.html">首页 ></a></li>
+				<li><a href="#" class="cate">电视 ></a></li>
+				<li class="fenlei"><a href="#">乐视tv ></a></li>
+			</ul>
+			<p><a href="#">筛选</a></p>
+		</div>
+
+	<div class="mb_pricer">
+		<!--wakeng-->
+	</div>
+
+		<div class="more_cmt">
+			<a href="#">查看更多评价</a>
+		</div>
+	</div>
+
+
+
+	<!--底部-->
+	<div class="mb_footer">
+		<div class="foot_top">
+			<a href="#">登录</a>
+			<a href="#">注册</a>
+			<a href="#">返回顶部</a>
+		</div>
+		<div class="footer_bot">
+			<p>
+				<a href="javascript:;" style="color: Red;">手机APP下载</a>
+				<a href="index.html" style="color: black;">慢慢买手机版</a>
+				-- 掌上比价平台
+			</p>
+			<p>m.manmanbuy.com</p>
+		</div>
+	</div>
+</div>
+
+<script type="text/html" id="tpl">
+{{each result v i}}
+	<div class="bjt">
+		<div class="title">
+			<p>{{v.productName}}</p>
+		</div>
+		<div class="imgs">
+			{{#v.productImg}}
+		</div>
+		<div class="product_q">
+			<a href="#">
+				<img src="images/header_logo.png" alt="">
+			</a>
+		</div>
+	</div>
+
+<div class="tab">
+	<ul>
+		<li class="cur"><a href="#">比价购买</a></li>
+		<li class="mtab">
+			<a href="#">产品参数</a>
+		</li>
+		<li class=""><a href="#" class="">评价(2322)</a></li>
+	</ul>
+</div>
+
+	{{#v.bjShop}}
+
+
+<div class="note">
+	* 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。
+</div>
+
+
+<div class="product-com-title">
+	<div>网友评价</div>
+</div>
+
+<div class="product-com-list">
+
+</div>
+
+{{/each}}
+</script>
+
+
+<script type="text/html" id="tpl2">
+{{each result v i}}
+
+<div class="topw clearfix">
+	<span class="uname">{{v.comName}}</span>
+	<span class="date1">{{v.comTime}}</span>
+</div>
+<p class="btf clearfix">{{v.comFrom}}</p>
+
+<div class="comment_t">
+{{v.comContent}}
+</div>
+{{/each}}
+</script>
+<script src="lib/zepto/zepto.min.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="js/common.js"></script>
+<script src="js/bijia.js"></script>
+</body>
+</html>
